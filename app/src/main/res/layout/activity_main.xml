@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/protect"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- The main content view -->
+        <!-- main content must be the first element of DrawerLayout... -->
+        <!-- ...because it will be drawn first and drawer must be on top of it -->
+        <!-- DrawerLayout的第一个元素是主要内容，即抽屉没有打开时显示的布局 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/content"
+            android:orientation="vertical">
+
+            <com.yang.toolbar.widget.PagerSlidingTabStrip
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="48dip" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+        <!-- The navigation drawer -->
+        <!-- DrawerLayout的第二个子元素是抽屉中的内容，即抽屉菜单布局 -->
+        <LinearLayout
+            android:id="@+id/drawer_view"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@drawable/drawer"
+            android:orientation="vertical"
+            android:padding="8dp" >
+
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+
+
+</LinearLayout>

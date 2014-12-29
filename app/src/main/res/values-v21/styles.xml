@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!-- toolbar颜色 -->
+        <item name="android:colorPrimary">#FF4876FF</item>
+
+        <!-- 状态栏颜色 -->
+        <item name="android:colorPrimaryDark">#FF3A5FCD</item>
+
+        <!-- 底部导航栏颜色 -->
+        <item name="android:navigationBarColor">@color/skyblue</item>
+
+    </style>
+
+</resources>

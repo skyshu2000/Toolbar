@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="sea_green">#FF2E8B57</color>
+    <color name="protect">#C7EDCC</color>
+
+    <color name="skyblue">#FF87CEEB</color><!--天蓝色 -->
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <color name="primaryColor">#2196F3</color>
+    <color name="primaryColorDark">#0D47A1</color>
+</resources>
